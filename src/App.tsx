@@ -1,5 +1,9 @@
+import AboutMe from "./components/AboutMe";
+
 const App = () => {
-  return <div>App</div>;
+  return <main style={{display: 'flex', justifyContent: 'center'}}>
+    <AboutMe />
+  </main>;
 }
 
 export default App;
