@@ -21,7 +21,7 @@ const AboutMe = () => {
           euismod lacinia. Et malesuada fames ac turpis. Fermentum iaculis eu non diam phasellus vestibulum lorem.
           Nascetur ridiculus mus mauris vitae. Tempus imperdiet nulla malesuada pellentesque elit eget gravida.
         </StyledDescription>
-        <StyledSocials color="black" fontSize="1.5rem" style={{alignSelf: 'flex-end'}} />
+        <StyledSocials color="black" fontSize="1.5rem" style={{ alignSelf: 'flex-end' }} />
       </StyledSection>
     </StyledContainer>
   );
@@ -32,6 +32,12 @@ const StyledContainer = styled.div`
   align-items: center;
   width: fit-content;
   padding-top: 64px;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+  }
 `;
 
 const StyledFigure = styled.figure`
@@ -41,12 +47,31 @@ const StyledFigure = styled.figure`
   margin: 0;
   box-shadow: 2px 1px 6px 1px #56565691;
   height: 600px;
+
+  @media (max-width: 1050px) {
+    height: 400px;
+  }
+
+  @media (max-width: 750px) {
+    max-height: 75vh;
+    width: 100%;
+    box-shadow: none;
+  }
 `;
 
 const StyledProfileImage = styled.img`
   height: 100%;
   width: 500px;
   object-fit: cover;
+
+  @media (max-width: 1050px) {
+    width: 250px;
+  }
+
+  @media (max-width: 750px) {
+    width: 300px;
+    box-shadow: 2px 1px 6px 1px #56565691;
+  }
 `;
 
 const StyledProfileName = styled.h1`

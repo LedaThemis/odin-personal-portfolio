@@ -72,6 +72,10 @@ const ProjectsContainer = styled.div`
   display: grid;
   gap: 32px;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+  @media (max-width: 750px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 `;
 
 export default Projects;

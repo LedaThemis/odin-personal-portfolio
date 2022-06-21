@@ -6,13 +6,23 @@ import Contact from './components/Contact';
 
 const App = () => {
   return (
-    <StyledMainContainer>
-      <AboutMe />
-      <Projects />
-      <Contact />
-    </StyledMainContainer>
+    <StyledContainer>
+      <StyledMainContainer>
+        <AboutMe />
+        <Projects />
+        <Contact />
+      </StyledMainContainer>
+    </StyledContainer>
   );
 };
+
+const StyledContainer = styled.div`
+  @media (min-width: 2000px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
 
 const StyledMainContainer = styled.main`
   display: flex;
@@ -20,10 +30,20 @@ const StyledMainContainer = styled.main`
   align-items: center;
   gap: 100px;
 
+  max-width: 2000px;
+
   & > * {
     padding-left: 64px;
     padding-right: 64px;
     box-sizing: border-box;
+  }
+
+  @media (max-width: 750px) {
+    & > * {
+      padding-left: 16px;
+      padding-right: 16px;
+      box-sizing: border-box;
+    }
   }
 `;
 
