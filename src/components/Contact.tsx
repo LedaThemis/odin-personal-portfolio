@@ -16,11 +16,11 @@ const Contact = () => {
       </StyledParagraph>
       <StyledContactArea>
         <ParagraphWithIcon>
-          <Icon path={mdiPhoneOutline} size={1} />
+          <Icon path={mdiPhoneOutline} size={1} title='Phone Number' />
           <StyledParagraph>555-555-5555</StyledParagraph>
         </ParagraphWithIcon>
         <ParagraphWithIcon>
-          <Icon path={mdiEmailOutline} size={1} />
+          <Icon path={mdiEmailOutline} size={1} title='Email' />
           <StyledParagraph>lizasummer.is.not.real@gmail.com</StyledParagraph>
         </ParagraphWithIcon>
       </StyledContactArea>
