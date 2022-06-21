@@ -22,17 +22,15 @@ const AboutMe = () => {
         <StyledSocialsSection>
           <StyledSocialsLink href="https://github.com" target="_blank" rel="noreferrer">
             <StyledSocialsIcons className="devicon-github-original" aria-hidden="true" />
-            <StyledHiddenSpan className="visually-hidden">Personal Github Profile (opens in new tab)</StyledHiddenSpan>
+            <StyledHiddenSpan>Personal Github Profile (opens in new tab)</StyledHiddenSpan>
           </StyledSocialsLink>
           <StyledSocialsLink href="https://linkedin.com" target="_blank" rel="noreferrer">
             <StyledSocialsIcons className="devicon-linkedin-plain" aria-hidden="true" />
-            <StyledHiddenSpan className="visually-hidden">
-              Personal Linkedin Profile (opens in new tab)
-            </StyledHiddenSpan>
+            <StyledHiddenSpan>Personal Linkedin Profile (opens in new tab)</StyledHiddenSpan>
           </StyledSocialsLink>
           <StyledSocialsLink href="https://twitter.com" target="_blank" rel="noreferrer">
             <StyledSocialsIcons className="devicon-twitter-original" aria-hidden="true"></StyledSocialsIcons>
-            <StyledHiddenSpan className="visually-hidden">Personal Twitter Profile (opens in new tab)</StyledHiddenSpan>
+            <StyledHiddenSpan>Personal Twitter Profile (opens in new tab)</StyledHiddenSpan>
           </StyledSocialsLink>
         </StyledSocialsSection>
       </StyledSection>
