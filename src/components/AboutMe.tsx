@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import StyledSocials from './StyledSocials';
+
 const AboutMe = () => {
   return (
     <StyledContainer>
@@ -19,20 +21,7 @@ const AboutMe = () => {
           euismod lacinia. Et malesuada fames ac turpis. Fermentum iaculis eu non diam phasellus vestibulum lorem.
           Nascetur ridiculus mus mauris vitae. Tempus imperdiet nulla malesuada pellentesque elit eget gravida.
         </StyledDescription>
-        <StyledSocialsSection>
-          <StyledSocialsLink href="https://github.com" target="_blank" rel="noreferrer">
-            <StyledSocialsIcons className="devicon-github-original" aria-hidden="true" />
-            <StyledHiddenSpan>Personal Github Profile (opens in new tab)</StyledHiddenSpan>
-          </StyledSocialsLink>
-          <StyledSocialsLink href="https://linkedin.com" target="_blank" rel="noreferrer">
-            <StyledSocialsIcons className="devicon-linkedin-plain" aria-hidden="true" />
-            <StyledHiddenSpan>Personal Linkedin Profile (opens in new tab)</StyledHiddenSpan>
-          </StyledSocialsLink>
-          <StyledSocialsLink href="https://twitter.com" target="_blank" rel="noreferrer">
-            <StyledSocialsIcons className="devicon-twitter-original" aria-hidden="true"></StyledSocialsIcons>
-            <StyledHiddenSpan>Personal Twitter Profile (opens in new tab)</StyledHiddenSpan>
-          </StyledSocialsLink>
-        </StyledSocialsSection>
+        <StyledSocials color="black" fontSize="1.5rem" style={{alignSelf: 'flex-end'}} />
       </StyledSection>
     </StyledContainer>
   );
@@ -42,6 +31,7 @@ const StyledContainer = styled.div`
   display: flex;
   align-items: center;
   width: fit-content;
+  padding-top: 64px;
 `;
 
 const StyledFigure = styled.figure`
@@ -90,42 +80,6 @@ const StyledDescription = styled.p`
   color: #565656;
   font-size: var(--p-font-size);
   margin: 0;
-`;
-
-const StyledSocialsSection = styled.div`
-  display: flex;
-  gap: 16px;
-  align-self: flex-end;
-`;
-
-const StyledSocialsLink = styled.a`
-  text-decoration: none;
-  color: black;
-
-  &:visited {
-    color: black;
-  }
-`;
-
-const StyledSocialsIcons = styled.i`
-  font-size: 1.5rem;
-`;
-
-const StyledHiddenSpan = styled.span`
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-
-  &:focus {
-    clip: auto;
-    height: auto;
-    overflow: auto;
-    position: absolute;
-    width: auto;
-  }
 `;
 
 export default AboutMe;
