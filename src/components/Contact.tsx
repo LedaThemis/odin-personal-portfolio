@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import Icon from '@mdi/react';
+import { mdiEmailOutline, mdiPhoneOutline } from '@mdi/js';
 
 import StyledSocials from './StyledSocials';
 
@@ -13,8 +15,14 @@ const Contact = () => {
         Random Town, California 12345
       </StyledParagraph>
       <StyledContactArea>
-        <StyledParagraph>555-555-5555</StyledParagraph>
-        <StyledParagraph>lizasummer.is.not.real@gmail.com</StyledParagraph>
+        <ParagraphWithIcon>
+          <Icon path={mdiPhoneOutline} size={1} />
+          <StyledParagraph>555-555-5555</StyledParagraph>
+        </ParagraphWithIcon>
+        <ParagraphWithIcon>
+          <Icon path={mdiEmailOutline} size={1} />
+          <StyledParagraph>lizasummer.is.not.real@gmail.com</StyledParagraph>
+        </ParagraphWithIcon>
       </StyledContactArea>
       <StyledSocials color="white" fontSize="2rem" />
     </StyledContainer>
@@ -27,7 +35,7 @@ const StyledContainer = styled.section`
   width: 100%;
   padding-top: 64px;
   padding-bottom: 64px;
-  background-color: #0891b2;
+  background-color: #046e87;
   color: white;
   gap: 30px;
 `;
@@ -39,6 +47,12 @@ const StyledSectionHeading = styled.h2`
   margin: 0;
 `;
 
+const ParagraphWithIcon = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+`;
+
 const StyledParagraph = styled.p`
   font-family: var(--descriptions-font-family);
   font-size: var(--p-font-size);
@@ -46,9 +60,9 @@ const StyledParagraph = styled.p`
 `;
 
 const StyledContactArea = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
 
 export default Contact;
