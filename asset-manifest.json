@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/odin-personal-portfolio/static/css/main.28c70772.css",
+    "main.js": "/odin-personal-portfolio/static/js/main.40ad7d49.js",
+    "index.html": "/odin-personal-portfolio/index.html",
+    "main.28c70772.css.map": "/odin-personal-portfolio/static/css/main.28c70772.css.map",
+    "main.40ad7d49.js.map": "/odin-personal-portfolio/static/js/main.40ad7d49.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28c70772.css",
+    "static/js/main.40ad7d49.js"
+  ]
+}
