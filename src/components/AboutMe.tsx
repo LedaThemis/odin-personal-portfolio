@@ -52,23 +52,23 @@ const StyledFigure = styled.figure`
   align-items: center;
   margin: 0;
   box-shadow: 2px 1px 6px 1px #56565691;
-  height: 450px;
-  width: 400px;
+  height: 600px;
 `;
 
 const StyledProfileImage = styled.img`
   height: 100%;
-  width: 100%;
+  width: 500px;
   object-fit: cover;
 `;
 
 const StyledProfileName = styled.h1`
-  font-family: 'Playfair Display', sans-serif;
-  font-weight: 400;
+  font-family: var(--headings-font-family);
+  font-weight: var(--h1-font-weight);
+  font-size: var(--h1-font-size);
   color: white;
   text-shadow: -2px 3px 8px black;
   margin: 0;
-  margin-top: -60px;
+  margin-top: -75px;
 `;
 
 const StyledSection = styled.section`
@@ -78,19 +78,19 @@ const StyledSection = styled.section`
   display: flex;
   gap: 32px;
   flex-direction: column;
-  max-width: 450px;
 `;
 
 const StyledSectionHeader = styled.h2`
-  font-family: 'Playfair Display', sans-serif;
-  font-weight: 400;
-  font-size: 1.75rem;
+  font-family: var(--headings-font-family);
+  font-weight: var(--h2-font-weight);
+  font-size: var(--h2-font-size);
   margin: 0;
 `;
 
 const StyledDescription = styled.p`
   font-family: Roboto, sans-serif;
   color: #565656;
+  font-size: var(--p-font-size);
   margin: 0;
 `;
 

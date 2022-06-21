@@ -1,0 +1,13 @@
+:root {
+    --h1-font-size: 3rem;
+    --h2-font-size: 2rem;
+    --h1-font-weight: 400;
+    --h2-font-weight: 400;
+    --p-font-size: 1.25rem;
+    --headings-font-family: 'Playfair Display', sans-serif;
+
+}
+
+body {
+    margin: 0;
+}
